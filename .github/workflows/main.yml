@@ -16,5 +16,5 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN }}
         - run: docker build -t ghcr.io/apatisss/pyhton-app-deploy:latest .
-        - run: docker push ghcr.io/apatisss/pyhton-deploy:latest 
+        - run: docker push ghcr.io/apatisss/pyhton-app-deploy:latest 
           
