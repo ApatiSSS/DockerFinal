@@ -15,7 +15,7 @@ jobs:
             registry: ghcr.io
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN }}
-        - run: docker build -t ghcr.io/apatisss/pyhton-app:latest .
-        - run: docker push ghcr.io/apatisss/pyhton-app:latest 
-        - run: docker run ghcr.io/apatisss/pyhton-app:latest 
+        - run: docker build -t ghcr.io/apatisss/pyhton-appp:latest .
+        - run: docker push ghcr.io/apatisss/pyhton-appp:latest 
+        - run: docker run ghcr.io/apatisss/pyhton-appp:latest 
           
