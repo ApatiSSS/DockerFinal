@@ -17,4 +17,4 @@ jobs:
             password: ${{ secrets.GITHUB_TOKEN }}
         - run: docker build -t ghcr.io/apatisss/pyhton-app-deploy:1.0 .
         - run: docker push ghcr.io/apatisss/pyhton-app-deploy:1.0
-          
+        - run: ssh -o  "StrictHostKeyChecking no" 'apatisss-dockerfinal-ouhvulv6lko#gcvISmKGb.OmuobaiTcNY.LA3lYvu3q2@apatisss-dockerfinal-ouhvulv6lko.ssh.ws-eu106.gitpod.io' 'cd /workspace/DockerFinal && docker compose pull && docker compose up -d'
